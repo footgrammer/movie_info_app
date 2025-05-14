@@ -21,7 +21,13 @@ class _DetailPageState extends State<DetailPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Image.asset(widget.movie.moviePoster, width: double.infinity),
+              Hero(
+                tag: 'most-popular-movie',
+                child: Image.asset(
+                  widget.movie.moviePoster,
+                  width: double.infinity,
+                ),
+              ),
               SizedBox(height: 16),
               Container(
                 padding: EdgeInsets.symmetric(horizontal: 20),
