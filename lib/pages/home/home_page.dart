@@ -65,13 +65,16 @@ class _HomePageState extends State<HomePage> {
                     ),
                   );
                 },
-                child: SizedBox(
-                  width: double.infinity,
-                  child: AspectRatio(
-                    aspectRatio: 9 / 16,
-                    child: Image.asset(
-                      'assets/images/poster1.png',
-                      fit: BoxFit.cover,
+                child: Hero(
+                  tag: 'most-popular-movie',
+                  child: SizedBox(
+                    width: double.infinity,
+                    child: AspectRatio(
+                      aspectRatio: 9 / 16,
+                      child: Image.asset(
+                        'assets/images/poster1.png',
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
                 ),
